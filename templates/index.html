@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pothole Detection</title>
+    <!-- <script src="{{ url_for('static',filename='script.js')}}"></script> -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <form class="form" action="/upload" method="post" enctype="multipart/form-data">
+            <div class="file-upload-wrapper" data-text="Select your file!">
+                <input name="file" type="file" class="file-upload-field" value="" id="file">
+            </div>
+            <button id="hello">SUBMIT</button>
+        </form>
+    </div>
+</body>
+</html>
